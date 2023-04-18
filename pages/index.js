@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { NodeNextRequest } from "next/dist/server/base-http/node";
+import Link from "next/link";
 
 export default function Home() {
   const ScrollAnimation = () => {
@@ -176,6 +177,10 @@ export default function Home() {
                     src="https://pics.prcm.jp/0a3e4ccca4b12/68217265/png/68217265.png"
                     w="90px"
                   />
+                <Link  href="https://github.com/hiro-oda/mysite">
+
+                
+              
                   <Text
                     ml="50px"
                     mb="12px"
@@ -185,6 +190,8 @@ export default function Home() {
                   >
                     your_user_name
                   </Text>
+
+                  </Link>
                 </Flex>
                 <Flex alignItems={"center"} h="100%">
                   <Image
