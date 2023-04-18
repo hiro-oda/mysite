@@ -227,7 +227,7 @@ export default function Home() {
               letterSpacing={"0.05rem"}
               color="#333333"
             >
-              NAMAE MYOUJI
+              以上俺でした！
             </Text>
           </Flex>
         </Box>
@@ -260,7 +260,7 @@ export default function Home() {
               color="gray.800"
               className="text shadow"
             >
-              NAMAE MYOUJI
+              来てくれた君最高！
             </Text>
           </Flex>
         </Box>
@@ -280,7 +280,7 @@ export default function Home() {
               fontWeight={"bold"}
               letterSpacing={"0.1rem"}
             >
-              私について
+              俺！
             </Text>
             <Box>
               <Text
@@ -289,8 +289,7 @@ export default function Home() {
                 lineHeight={"1.6em"}
                 mb="40px"
               >
-                これはサンプルテキストです。これはサンプルテキストです。これはサンプルテキストです。これはサンプルテキストです。これはサンプルテキストです。これはサンプルテキストです。
-                これはサンプルテキストです。これはサンプルテキストです。
+                ようこそ僕のwebsiteへ！
               </Text>
             </Box>
             <Image
@@ -377,7 +376,7 @@ export default function Home() {
               letterSpacing={"0.05rem"}
               color="#333333"
             >
-              NAMAE MYOUJI
+              以上俺でした！
             </Text>
           </Flex>
         </Box>
