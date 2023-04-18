@@ -1,27 +1,171 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap");
+.text {
+  font-family: "Noto Sans JP", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.blue {
+  background: linear-gradient(
+    20deg,
+    #b23d9d 0%,
+    #5a8eee 45%,
+    #b1dcff 70%,
+    #223581 85%,
+    #83a8c0 90% 100%
+  );
+  background-size: 800% 400%;
+  animation: gradient 9s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+}
+.orange {
+  background: linear-gradient(
+    20deg,
+    #fede5f 0%,
+    #ffb93f 45%,
+    #2c39ca 70%,
+    #cf8516 85%,
+    #721037 90% 100%
+  );
+  background-size: 800% 400%;
+  animation: gradient 9s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+}
+.redblue {
+  background: linear-gradient(
+    20deg,
+    #69acce 0%,
+    #5a8eee 45%,
+    #ffb1f3 70%,
+    #470fb6 85%,
+    #83a8c0 90% 100%
+  );
+  background-size: 800% 400%;
+  animation: gradient 9s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+}
+.green {
+  background: linear-gradient(
+    20deg,
+    #69cea6 0%,
+    #5aee89 45%,
+    #b1ffce 70%,
+    #0f31b6 85%,
+    #83a8c0 90% 100%
+  );
+  background-size: 800% 400%;
+  animation: gradient 9s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+}
+.silver {
+  background: linear-gradient(
+    45deg,
+    #757575 0%,
+    #9e9e9e 45%,
+    #e8e8e8 70%,
+    #9e9e9e 85%,
+    #757575 90% 100%
+  );
+  background-size: 800% 400%;
+  animation: gradient 5s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+}
+.gold {
+  background: linear-gradient(
+    45deg,
+    #c0b283 0%,
+    #c0b283 45%,
+    #fee9a0 70%,
+    #c0b283 85%,
+    #c0b283 90% 100%
+  );
+  background-size: 800% 400%;
+  animation: gradient 5s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+}
+.bronze {
+  background: linear-gradient(
+    45deg,
+    #e75b04 0%,
+    #17ecc8 45%,
+    #f3cfb8 70%,
+    #4011c0 85%,
+    #c20834 90% 100%
+  );
+  background-size: 800% 400%;
+  animation: gradient 5s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/*デフォルト*/
+.pat1 {
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='23.07' height='40' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M17.62 0l-6.07 10.5m2.74 4.76L8.22 4.75m-5.48 0h12.13M.01 0h23.07M6.07 20L0 9.5m2.74-4.75l-6.07 10.5m-5.48 0H3.33m8.2 4.75L0 .02-11.54 20m40.68 0L23.07 9.5m2.74-4.75l-6.06 10.5m-5.49 0H26.4M34.6 20L23.08.02 11.53 20m-5.46 0L0 30.51m2.74 4.75l-6.07-10.5m-5.48 0H3.33m8.2-4.75L0 40l-11.54-19.98zM17.6 40l-6.06-10.5m2.74-4.76L8.2 35.25m-5.48 0h12.13M0 40h23.07L11.54 20.01m17.6 0l-6.07 10.5m2.74 4.75l-6.06-10.5m-5.49 0H26.4M11.53 20h23.08L23.07 40'  stroke-linecap='square' stroke-width='1' stroke='hsla(258.5,59.4%,59.4%,1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
+
+.pat2 {
+  width:50px;
+  height:50px;
+  background-color:#fff;
+  background-image: radial-gradient(closest-side, transparent 98%, #6846A5 99%),
+  radial-gradient(closest-side, transparent 98%, #6846A5 99%);
+  background-size:36px 36px;
+  background-position:0 0, 14px 14px;
+  }
+
+.pat3{
+  width:300px;
+  height:300px;
+background-color:#6846A5;
+background-image:
+radial-gradient(circle at 100% 150%, #6846A5 24%, #fff 24%, #fff 28%, #6846A5 28%, #6846A5 36%, #fff 36%, #fff 40%, transparent 40%, transparent),
+radial-gradient(circle at 0    150%, #6846A5 24%, #fff 24%, #fff 28%, #6846A5 28%, #6846A5 36%, #fff 36%, #fff 40%, transparent 40%, transparent),
+radial-gradient(circle at 50%  100%, #fff 10%, #6846A5 10%, #6846A5 23%, #fff 23%, #fff 30%, #6846A5 30%, #6846A5 43%, #fff 43%, #fff 50%, #6846A5 50%, #6846A5 63%, #fff 63%, #fff 71%, transparent 71%, transparent),
+radial-gradient(circle at 100% 50%, #fff 5%, #6846A5 5%, #6846A5 15%, #fff 15%, #fff 20%,  20%, #6846A5 29%, #fff 29%, #fff 34%, #6846A5 34%, #6846A5 44%, #fff 44%, #fff 49%, transparent 49%, transparent),
+radial-gradient(circle at 0    50%,#fff 5%, #6846A5 5%, #6846A5 15%, #fff 15%, #fff 20%, #6846A5 20%, #6846A5 29%, #fff 29%, #fff 34%, #6846A5 34%, #6846A5 44%, #fff 44%, #fff 49%, transparent 49%, transparent);
+background-size: 50px 25px;
+}
+
+
+.shadow {
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sa {
+  opacity: 0;
+  transition: all 0.7s ease;
+}
+
+.sa.show {
+  opacity: 1;
+  transform: none;
+}
+
+.sa--up {
+  transform: translate(0, 5px);
+}
+
+.fadeIn {
+  animation-name: fadeInAnime;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInAnime {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
